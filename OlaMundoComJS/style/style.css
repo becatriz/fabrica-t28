@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(253, 253, 253);
+    color: black;
+
+    
+}
+
+p{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+    width: 30%;
+    font-size: 20pt;
+    line-height: 1.5;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    
+
+}
+
+button{
+    outline-style: none;
+    background-color: white;
+    font-size: 15pt;
+    padding: 25px;
+    border: 1px solid lightgray;
+    font-weight: bold;
+    margin-left: -1;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: lightslategray;
+    color: white;
+
+
+}

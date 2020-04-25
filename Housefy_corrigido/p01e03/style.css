@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background-color: rgb(232, 232, 232);
+    padding-bottom: 100px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.navbar img {
+    height: 25px;
+}
+.navbar h1 {
+    color: white;
+    font-weight: 300;
+    margin-left: 20px;
+}
+.navbar div {
+    display: flex;
+}
+
+/* CARD PRODUTO */
+.card-produto {
+    width: calc(100% - 40px);
+    margin: 0px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 40px;
+}
+.card-produto img {
+    width: 100%;
+}
+.card-produto .card-produto-descricao {
+    padding: 10px 20px;
+}
+.card-produto .card-produto-descricao h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-produto .card-produto-descricao p {
+    font-size: 11pt;
+    color: grey;
+}
+.card-produto .card-produto-descricao p:last-child {
+    color: blue;
+}
+
+/* RODAPE */
+.footer {
+    height: 70px;
+    width: 100%;
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

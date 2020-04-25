@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <script src="./javascript/javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smile</title>
+  </head>
+
+  <body>
+    <div class="smile">
+      <img id="carinha" src="./img/happy.svg" alt="Smile" />
+    </div>
+
+    <div class="texto">
+      <p id="textoInicial">Olá me chamo Cortana, como posso ajudar?</p>
+      <p id="textoRespostaClicar"></p>
+      <p id="textoRespostaCortana"></p>
+    </div>
+
+    <div class="textoFala">
+      <p>Escolha a sua resposta abaixo:</p>
+      <button id="01" onclick="falar(id)">Olá</button>
+      <button id="02" onclick="falar(id)">Não te gosto</button>
+      <button id="03" onclick="falar(id)">Está elegante hoje!</button>
+      <img id="trash" src="./img/trash.svg" alt="lixeira" onclick="reset()">
+    </div>
+  </body>
+</html>

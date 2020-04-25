@@ -1,0 +1,110 @@
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro de Cliente</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/estilo.css">
+    <script src="javascript/script.js"></script>
+</head>
+
+<body>
+
+    
+
+    <h1 class="titulo">Registro da Venda</h1>
+
+    <form>
+        <div class="alerta">
+            <img src="img/tick.svg" alt="Ícone do alerta">
+            <p>Mensagem do Alerta</p>
+        </div>
+        <div class="formulario">
+        <fieldset class="fieldset-border">
+            <legend class="legend-border">Dados do Cliente</legend>
+                <div>
+                    <label for="nome">Nome do cliente:</label>
+                    <input id="nome" type="text" placeholder="Ex: Jão da Silva">
+                </div>
+                <div>
+                    <label for="">Celular/Telefone:</label>
+                    <input id="numero" type="text" placeholder="Ex: (67)9 9999-9999">
+                </div>
+                <div>
+                    <label for="">Email:</label>
+                    <input id="email" type="text" placeholder="Ex: jao@gmail.com">
+                </div>
+                <div>
+                    <label for="">CPF:</label>
+                    <input id="cpf" type="text" placeholder="Ex: 999.999.999-99">
+                </div>
+                <div>
+                    <label for="">Total da Compra:</label>
+                    <input id="totalCompra" type="text"  value="1.1200" placeholder="Ex: 10000">
+                </div>
+            </div>
+            <div class="formulario-pagamento">
+            <fieldset class="fieldset-border">
+                <legend class="legend-border">Forma de Pagamento</legend>
+                    <div>
+                        <input type="radio" id="dinheiro" name="pagamento" value="dinheiro">
+                        <label for="dinheiro">Dinheiro</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="cartaoCredito" name="pagamento" value="Cartão de Crédito">
+                        <label for="cartaoCredito">Cartão de Crédito</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="cartaoDebito" name="pagamento" value="Cartão de Débito">
+                        <label for="cartaoDebito">Cartão de Débito</label><br>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="formulario-parcelamento">
+            <fieldset class="fieldset-border">
+                <legend class="legend-border">Parcelamento</legend>
+                    <div class="seleciona">
+                        <label for="parcelamento">Quantidade de parcelas:</label>
+                        <select name="parcelamento" id="parcelamento">
+                            <option value="À vista R$ 1.200">À vista R$ 1.200</option>
+                            <option value="12x R$100.00">12x R$100.00</option>
+                            <option value="11x R$109.09">11x R$109.09</option>
+                            <option value="10x R$120.00">10x R$120.00</option>
+                            <option value="9x R$133.33">9x R$133.33</option>
+                            <option value="8x R$150.00">8x R$150.00</option>
+                            <option value="7x R$171.42">7x R$171.42</option>
+                            <option value="6x R$200.00">6x R$200.00</option>
+                            <option value="5x R$240.00">5x R$240.00</option>
+                            <option value="4x R$300.00">4x R$300.00</option>
+                            <option value="3x R$400.00">3x R$400.00</option>
+                            <option value="2x R$600.00">2x R$600.00</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="botoes">
+                <button onclick="cancelar()" type="button" class="btn-cancelar">Cancelar</button>
+                <button onclick="salvar()" type="button" class="btn-salvar">Salvar</button>
+            </div>
+        </form>
+    </fieldset>
+
+    <div class="cupom-fiscal">
+        <h3>Dados da Venda</h3>
+        <p>-----------------------------------------</p>
+        <p>CLIENTE: <span id="cliente"></span></p>
+        <p>-----------------------------------------</p>
+        <p>CONTATO: <span id="contato"></span></p>
+        <p>-----------------------------------------</p>
+        <p>FORMA DE PAGAMENTO: <span id="pagamento"></span></p>
+        <p>-----------------------------------------</p>
+        <p>PARCELAS: <span id="parcela"></span></p>
+        <p>-----------------------------------------</p>
+        <p>TOTAL: <span id="total"></span></p>
+        <p>-----------------------------------------</p>
+    </div>
+
+
+
+</body>
+
+</html>

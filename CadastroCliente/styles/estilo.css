@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "FakeReceipt";
+  src: url("../font/fake_receipt.ttf") format("truetype");
+  }
+
+* {
+  outline: none;
+  
+}
+
+.cupom-fiscal{
+  font-family: "FakeReceipt", Fallback, sans-serif;
+  background-color: rgb(255, 246, 122);
+  width: 20%;
+  height: 40%;
+  margin: 0px auto;
+  margin-bottom: 25px;
+  font-size: 9;
+  justify-content: center;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  visibility: hidden;
+  
+  
+ 
+}
+
+h3{
+  text-align: center;
+}
+
+
+.alerta {
+  margin-top: 5px;
+  background-color: lightgreen;
+  color: white;
+  padding: 20px;
+  display: flex;
+  visibility: hidden;
+  border-radius: 8px;
+  margin-left: 76%;
+  position: absolute;
+  bottom: -40px;
+  right: 10px
+}
+
+.alerta img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.titulo {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 5%;
+}
+
+.fieldset-border {
+  border: 0.5px solid gray;
+  border-radius: 8px;
+  width: 50%;
+  margin: 0px auto;
+}
+
+.legend-border {
+  text-align: center;
+}
+
+form{
+    position: relative;
+    font-family: sans-serif;
+}
+
+.formulario {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: -20px;
+ 
+
+  /* border-color: gray;
+    border-width: 1px;
+    border-style: solid; */
+}
+
+.formulario-pagamento {
+  line-height: 2;
+  margin-top: 30px;
+}
+
+.formulario-parcelamento {
+  line-height: 2;
+  margin-top: 30px;
+}
+
+.formulario div {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.formulario label {
+  width: 30%;
+}
+
+.btn-salvar {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btn-cancelar {
+  background-color: white;
+  cursor: pointer;
+  color: red;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.botoes {
+  margin-top: 40px;
+  text-align: right;
+  margin-right: 25%;
+}
+
+label {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+select {
+  border-radius: 8px;
+  width: 100%;
+}

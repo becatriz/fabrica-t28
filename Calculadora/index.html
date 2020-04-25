@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link href="style/style.css" rel="stylesheet">
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="javaScript/javaScript.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="calculadora">
+        <table class="table table-bordered table-dark col-xs-6 col-sm-6">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        <input type="text" class="form-control" id="resultado" aria-describedby="addon-wrapping"></th>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="operacaoDigitada(value)" value="/">/</button></td>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-lg-12"
+                            onclick="numeroDigitado(value)" value="7">7</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="numeroDigitado(value)" value="8">8</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="numeroDigitado(value)" value="9">9</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="operacaoDigitada(value)" value="x">x</button></td>
+                </tr>
+                <tr>
+                    <td class="td "><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="numeroDigitado(value)" value="4">4</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="numeroDigitado(value)" value="5">5</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="numeroDigitado(value)" value="6">6</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="operacaoDigitada(value)" value="-">-</button></td>
+
+                </tr>
+                <tr>
+                    <td class="td "><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="numeroDigitado(value)" value="1">1</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="numeroDigitado(value)" value="2">2</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="numeroDigitado(value)" value="3">3</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="operacaoDigitada(value)" value="+">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="1" class="td "><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="numeroDigitado(value)" value=".">.</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="numeroDigitado(value)" value="0">0</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary  col-xs-12 col-sm-12 col-md-12 col-lg-12" onclick="reset()"
+                            value="c">C</button></td>
+                    <td class="td"><button type="button"
+                            class="btn btn-secondary btn-warning  col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            onclick="realizaOperacao()" value="=">=</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

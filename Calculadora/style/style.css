@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    
+}
+
+.calculadora{
+    margin: 10% 10% 10% 30%;
+    
+}
+
+input{
+    text-align: right;
+}
+

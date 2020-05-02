@@ -18,6 +18,13 @@ input{
   padding: 10px 20px;
   
 }
+
+button{
+  margin-top: 10px;
+  padding: 10px 65px;
+
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
@@ -25,5 +32,6 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
+
 
 
